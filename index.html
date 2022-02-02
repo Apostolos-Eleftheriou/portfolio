@@ -33,7 +33,7 @@
         <div class="main-one-left">
             <div class="main-one-left-header">Hi there! <br> My name is Apostolis.</div>
             <div class="main-one-left-subtext">I'm an aspiring Web Developer
-                that loves to make fast, stylish and responsives web sites / apps. I'm extremely dedicated, hard working and always
+                that loves to make fast, stylish and responsive web sites and apps. I'm extremely dedicated, hard working and always
                 willing to learn new technologies!
             </div>
         </div>
@@ -111,6 +111,13 @@
         click.addEventListener("click",()=>{
             list.classList.toggle('newlist');
         });
+
+        window.onclick = function(e) {
+            if(!e.target.matches('.click')){
+                list.classList.remove('newlist');
+            }
+        }
+
     </script>
     </div>
     </div>
