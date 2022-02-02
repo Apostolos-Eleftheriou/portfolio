@@ -146,14 +146,14 @@ a {
 }
 
 .main-one-left-header {
-    font-size: 36px;
+    font-size: 40px;
     font-family: 'Yellowtail', cursive;
     font-weight: bolder;
     color: #F9FAF8;
 }
 
 .main-one-left-subtext {
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Alegreya', serif;
     font-weight: 450;
     font-style: italic;
@@ -224,6 +224,15 @@ a {
 .imgtwo {
     transition-duration: 1s;
     max-width: 150px;
+}
+
+.ui-ux {
+    max-width: 250px;
+    transition: 1s;
+}
+.ui-ux:hover {
+    scale: 1.2;
+    transition-duration: 1s;
 }
 
 .main-three {
@@ -362,4 +371,9 @@ footer {
     color: #1d1d1d;
     font-size: 22px;
     border-radius: 70%;
+}
+
+.dropdown-links {
+    font-family: 'Yellowtail';
+    font-size: 26px;
 }
