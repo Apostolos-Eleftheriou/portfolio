@@ -34,6 +34,7 @@ html {
     background-color: #f85f73;
     font-size: 32px;
     width: 60px;
+    cursor: pointer;
 }
 
 .click:hover {
@@ -344,3 +345,14 @@ footer {
     font-family: 'Yellowtail';
     font-size: 26px;
 }
+
+.fa-github, .fa-facebook-f, .fa-instagram {
+    color: var(--primary-dark);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    padding-right: 12px;
+  }
+  
+  .fa-github:hover, .fa-facebook-f:hover, .fa-instagram:hover {
+    transform: rotate(360deg) scale(1.2);
+  }
