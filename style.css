@@ -10,7 +10,7 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-between;
-    background-color: #1d1d1d;
+    background-color: #252525;
     padding: 70px 0;
 }
 
@@ -158,7 +158,6 @@ a {
 .me {
     border-radius: 70%;
     box-shadow: 0 18px 32px rgba(124, 102, 102, 0.3), 0 14px 11px rgba(0,0,0,0.22);
-
 }
 
 .header-button {
@@ -219,6 +218,7 @@ a {
 
 .imgtwo {
     transition-duration: 1s;
+    max-width: 150px;
 }
 
 .main-three {
@@ -246,21 +246,54 @@ p {
     font-style: normal;
 }
 
-.main-four {
+.main-four-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #3882f6;
-    border: solid 1px #3882f6;
+    background-color: #252525;
+    border: solid 1px #252525;
     padding: 30px;
     border-radius: 10px;
     color: #E5E7EB;
-    max-width: 500px;
+    max-width: 400px;
     margin: 100px auto;
 }
 
-.footer-button {
-    background-color: #3882f6;
+.main-four-project, .main-five-project, .main-six-project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.main-five-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    border: solid 1px #252525;
+    padding: 30px;
+    border-radius: 10px;
+    color: #E5E7EB;
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.main-six-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #252525;
+    border: solid 1px #252525;
+    padding: 30px;
+    border-radius: 10px;
+    color: #E5E7EB;
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.button {
+    background-color: #e3596b;
     border-radius: 10px;
     color: #F9FAF8;
     padding: 8px;
@@ -269,139 +302,35 @@ p {
     height: auto;
     text-align: center;
     border: 2px solid #F9FAF8;
-    transition-duration: 1s;
+    transition-duration: .6s;
 }
 
-.footer-header-text {
-    font-size: 22px;
+.button:hover {
+    background-color: #252525;
+}
+
+.project-title-text {
+    font-size: 36px;
+    font-family: 'Yellowtail';
     font-weight: bold;
 }
 
-.footer-cta {
+.project-title {
+    font-family: 'Yellowtail';
+    font-size: 22px;
+    font-style: italic;
+}
+
+.btn-container {
+    padding-left: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    flex-flow: column;
+    align-items: center;
 }
 
-* {box-sizing: border-box}
-/* Full-width input fields */
-  input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
+/* * {box-sizing: border-box} */
 
-/* Add a background color when the inputs get focus */
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for all buttons */
-button {
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-  font-size: 15px;
-}
-
-button:hover {
-  opacity:1;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-/* Add padding to container elements */
-.container {
-  padding: 16px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #1f2937;
-  padding-top: 50px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #1f2937;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #e6eef7;
-  width: 65%; /* Can be more or less, depending on screen size */
-}
-
-/* Style the horizontal ruler */
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
-}
-
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
-
-input {
-    border-radius: 20px;
-}
-
-.cancelbtn, .signup {
-    border-radius: 20px;
-}
-
-.signup {
-    background: #3882f6;
-}
 
 footer {
     background: #1d1d1d;
