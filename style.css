@@ -253,27 +253,14 @@ p {
     margin: 100px auto;
 }
 
-.main-four-project, .main-five-project, .main-six-project {
+.main-four-project, .main-five-project, .main-six-project, .main-seven-project {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
 
-.main-five-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #252525;
-    border: solid 1px #252525;
-    padding: 30px;
-    border-radius: 10px;
-    color: #E5E7EB;
-    max-width: 400px;
-    margin: 100px auto;
-}
-
-.main-six-wrapper {
+.main-five-wrapper, .main-six-wrapper, .main-seven-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
