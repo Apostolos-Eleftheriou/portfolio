@@ -343,13 +343,13 @@ footer {
     font-size: 26px;
 }
 
-.fa-github, .fa-facebook-f, .fa-instagram {
+.fa-github, .fa-facebook-f, .fa-instagram, .fa-linkedin-in {
     color: #f9faf8;
     font-size: 24px;
     transition: transform 0.3s ease-in-out;
     padding-right: 12px;
   }
   
-  .fa-github:hover, .fa-facebook-f:hover, .fa-instagram:hover {
+  .fa-github:hover, .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover {
     transform: rotate(360deg) scale(1.2);
   }
