@@ -238,19 +238,6 @@ h2 {
     padding: 10%;
 }
 
-.main-four-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #252525;
-    border: solid 1px #252525;
-    padding: 30px;
-    border-radius: 10px;
-    color: #E5E7EB;
-    max-width: 400px;
-    margin: 100px auto;
-}
-
 .main-four-project, .main-five-project, .main-six-project, .main-seven-project {
     display: flex;
     justify-content: space-between;
@@ -258,7 +245,7 @@ h2 {
     flex-direction: row;
 }
 
-.main-five-wrapper, .main-six-wrapper, .main-seven-wrapper {
+.main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,4 +339,16 @@ footer {
   
   .fa-github:hover, .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover {
     transform: rotate(360deg) scale(1.2);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper {
+        scale: 70%;
+    }
+    .main-three-text, .main-two {
+        scale: 70%;
+    }
+    .main-one-right {
+        scale: 80%;
+    }
   }
