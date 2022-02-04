@@ -9,6 +9,12 @@ html {
     scroll-behavior: smooth;
 }
 
+.auto-input {
+    font-size: 40px;
+    font-family: 'Yellowtail', cursive;
+    font-weight: bold;
+    color: #fac650;
+}
 
 .header-container {
     display: flex;
@@ -25,7 +31,7 @@ html {
 }
 
 .header-logo {
-    font-family: 'Yellowtail';
+    font-family: 'Yellowtail', cursive;
     margin-left: 50px;
     margin-right: 30px;
 }
@@ -137,7 +143,7 @@ a {
 .main-one-left-header {
     font-size: 40px;
     font-family: 'Yellowtail', cursive;
-    font-weight: bolder;
+    font-weight: bold;
     color: #F9FAF8;
 }
 
@@ -238,14 +244,14 @@ h2 {
     padding: 10%;
 }
 
-.main-four-project, .main-five-project, .main-six-project, .main-seven-project {
+.main-four-project, .main-five-project, .main-six-project, .main-seven-project, .main-eigth-project {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
 
-.main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper {
+.main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper,  .main-eigth-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +290,6 @@ h2 {
 .project-title {
     font-family: 'Yellowtail';
     font-size: 22px;
-    font-style: italic;
 }
 
 .btn-container {
@@ -342,13 +347,27 @@ footer {
   }
 
   @media only screen and (max-width: 600px) {
-    .main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper {
+    .main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper, .main-eigth-wrapper {
         scale: 70%;
     }
-    .main-three-text, .main-two {
+    .main-three-text, .main-two, .email {
         scale: 70%;
     }
     .main-one-right {
         scale: 80%;
     }
+    .auto-input, .main-one-left-header {
+        font-size: 29px;
+    }
   }
+
+.email {
+    background-color: #e3596b;
+    padding: 8px;
+    border: solid 2px #F9FAF8;
+    border-radius: 10px;
+}
+
+.contact-me {
+    text-align: center;
+}

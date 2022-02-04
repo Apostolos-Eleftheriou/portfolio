@@ -26,12 +26,13 @@
                 <button class="links"><a class="dropdown-links" href="#showcase">Projects</a></button>
                 <button class="links"><a class="dropdown-links" href="https://github.com/Apostolos-Eleftheriou">GitHub</a></button>
                 <button class="links"><a class="dropdown-links" href="#CV">My CV</a></button>
+                <button class="links"><a class="dropdown-links" href="#CV">Contact me</a></button>
             </div>
         </div>
     </div>
     <div class="main-one">
         <div class="main-one-left">
-            <div class="main-one-left-header">Hi there! <br> My name is Apostolis.</div>
+            <div class="main-one-left-header">Hey there!<br>I'm <span class="auto-input"></span></div>
             <div class="main-one-left-subtext">I'm an aspiring Web Developer
                 that loves to make fast, stylish and responsive web sites and apps. I'm extremely dedicated, hard working and always
                 willing to learn new technologies!
@@ -138,6 +139,15 @@
             </div>
         </div>
     </div>
+    <div class="main-eigth-wrapper">
+        <div class="main-eigth-project">
+            <div class="project-title">
+                <div class="project-title-text contact-me">Contact Me</div>
+                <div class="project-title-subtext email">You can reach me at: <br>eleftheriou.apostolis@gmail.com</div>
+            </div>
+            <a id="CV"></a>
+        </div>
+    </div>
         <a class="gotopbtn" href="#"><i class="fas fa-angle-double-up"></i></a>
     <footer class="footer">
         <p style="padding-right: 20px;">
@@ -148,7 +158,7 @@
           Apostolos Eleftheriou
         </p>
         <a href="https://github.com/Apostolos-Eleftheriou" target="_blank">
-            <i class="fab fa-github" ></i></a>
+            <i class="fab fa-github"></i></a>
         <a href="https://www.facebook.com/apostolis.eleftheriou/" target="_blank">
             <i class="fab fa-facebook-f"></i></a>
         <a href="https://www.instagram.com/apostolis_elef/?utm_medium=copy_link" target="_blank">
@@ -156,6 +166,7 @@
         <a href="https://www.linkedin.com/in/apostolos-eleftheriou-a16b68230/" target="_blank">
             <i class="fab fa-linkedin-in"></i></a>
     </footer>
+    
       <script>
         let click = document.querySelector('.click');
         let list = document.querySelector('.list');
@@ -168,6 +179,17 @@
                 list.classList.remove('newlist');
             }
         }
-    </script>    
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+
+        var typed = new Typed('.auto-input', {
+        strings: ["Apostolis.","a Web Developer.","a UI/UX Desinger."],
+        typeSpeed: 45,
+        backSpeed: 40,
+        loop: true
+      });
+
+      </script>    
 </body>
 </html>
