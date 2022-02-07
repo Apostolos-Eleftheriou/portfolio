@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,6 +33,9 @@
             </div>
         </div>
     </div>
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
     <div class="main-one">
         <div class="main-one-left">
             <div class="main-one-left-header">Hey there!<br>I'm <span class="auto-input"></span></div>
@@ -182,20 +189,23 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
-
-        var typed = new Typed('.auto-input', {
+        const typed = new Typed('.auto-input', {
         strings: ["Apostolis.","a Web Developer.","a UI/UX Desinger."],
         typeSpeed: 45,
         backSpeed: 40,
         loop: true
       });
-
-      </script>
+    </script>
       <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> 
-      <script>
+    <script>
           const scroll = new SmoothScroll('a[href*="#"]', {
               speed: 600
           });
-      </script>
+    </script>
+    <script>
+        $(window).on("load",function(){
+        $(".loader-wrapper").delay(1000).fadeOut("slow");
+        });
+    </script>
 </body>
 </html>
