@@ -24,7 +24,6 @@
                 <button class="links"><a class="dropdown-links" href="#stacks">What im working with</a></button>
                 <button class="links"><a class="dropdown-links" href="#about-me">About me</a></button>
                 <button class="links"><a class="dropdown-links" href="#showcase">Projects</a></button>
-                <button class="links"><a class="dropdown-links" href="https://github.com/Apostolos-Eleftheriou">GitHub</a></button>
                 <button class="links"><a class="dropdown-links" href="#CV">My CV</a></button>
                 <button class="links"><a class="dropdown-links" href="#email">Contact me</a></button>
             </div>
@@ -85,17 +84,18 @@
         </div>
     </div>
     <a id="showcase"></a>
+    <h2 class="recent-projects">Recent Projects</h2>
      <div class="main-four-wrapper">
         <div class="main-four-project">
       <div class="project-title">
         <div class="project-title-text">Rock Paper Scissors</div>
-        <div class="project-title-subtext">This is a project to demonstrate live Javascript
-            interaction with user input.
+        <div class="project-title-subtext">Play against the computer! Trying to win gets
+            addicting after a while.
         </div>
       </div>
         <div class="btn-container">
-            <button class="button"><a href="https://github.com/Apostolos-Eleftheriou/rock-paper-scissors">Source Code</a></button>
-            <button class="button"><a href="https://apostolos-eleftheriou.github.io/rock-paper-scissors/">Live Demo</a></button>
+            <button class="button"><a class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/rock-paper-scissors">Source Code</a></button>
+            <button class="button"><a class="clickable-area" href="https://apostolos-eleftheriou.github.io/rock-paper-scissors/">Live Demo</a></button>
          </div>
       </div>
     </div>
@@ -103,13 +103,13 @@
         <div class="main-five-project">
             <div class="project-title">
                 <div class="project-title-text">Etc-A-Sketch</div>
-                <div class="project-title-subtext">This project demonstrates my dom manipulation skills...
-                    And also brings back childhood memories..
+                <div class="project-title-subtext">This project demonstrates my dom manipulation skills.
+                    Try drawing something!
                 </div>
               </div>
               <div class="btn-container">
-              <button class="button"><a href="https://github.com/Apostolos-Eleftheriou/etch-a-sketch">Source Code</a></button>
-              <button class="button"><a href="https://apostolos-eleftheriou.github.io/etch-a-sketch/"> Live Demo</a></button>
+              <button class="button"><a class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/etch-a-sketch">Source Code</a></button>
+              <button class="button"><a class="clickable-area" href="https://apostolos-eleftheriou.github.io/etch-a-sketch/"> Live Demo</a></button>
                 </div>
             </div>
     </div>
@@ -120,7 +120,7 @@
                 <div class="project-title-subtext">The portfolio source code.</div>
             </div>
             <div class="btn-container">
-                <button class="button"><a href="https://github.com/Apostolos-Eleftheriou/portfolio">Source Code</a></button>
+                <button class="button"><a class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/portfolio">Source Code</a></button>
             </div>
         </div>
     </div>
@@ -134,16 +134,16 @@
             </div>
             <a id="CV"></a>
             <div class="btn-container">
-              <button class="button"><a href="https://drive.google.com/uc?export=view&id=1VR9kUuOqywPXahGfnxIK1UrKnyOa3c2L">English CV</a></button>
-              <button class="button"><a href="https://drive.google.com/uc?export=view&id=14xqdYTl6sCk942GgMLEW3JEdI15Dn1DK">Greek CV</a></button>
+              <button class="button"><a class="clickable-area" href="https://drive.google.com/uc?export=view&id=1VR9kUuOqywPXahGfnxIK1UrKnyOa3c2L">English CV</a></button>
+              <button class="button"><a class="clickable-area" href="https://drive.google.com/uc?export=view&id=14xqdYTl6sCk942GgMLEW3JEdI15Dn1DK">Greek CV</a></button>
             </div>
         </div>
     </div>
     <div class="main-eigth-wrapper">
         <div class="main-eigth-project">
             <div class="project-title">
-                <div class="project-title-text contact-me">Contact Me</div>
-                <div class="project-title-subtext email">You can reach me at: <br>eleftheriou.apostolis@gmail.com</div>
+                <div class="project-title-text contact-me">Contact me at:</div>
+                <div class="project-title-subtext email">eleftheriou.apostolis@gmail.com</div>
             </div>
             <a id="email"></a>
         </div>
@@ -190,6 +190,12 @@
         loop: true
       });
 
-      </script>    
+      </script>
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> 
+      <script>
+          const scroll = new SmoothScroll('a[href*="#"]', {
+              speed: 600
+          });
+      </script>
 </body>
 </html>
