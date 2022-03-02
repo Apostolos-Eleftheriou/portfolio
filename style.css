@@ -390,7 +390,7 @@ footer {
     transform: rotate(360deg) scale(1.2);
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
     .main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper, .main-eigth-wrapper {
         scale: 70%;
     }
@@ -402,6 +402,12 @@ footer {
     }
     .auto-input, .main-one-left-header {
         font-size: 29px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    h2.recent-projects {
+        font-size: 35px
     }
   }
 
@@ -430,3 +436,14 @@ footer {
     margin: 30px auto;
     font-size: 55px;
 }
+
+.tag {
+    opacity: 0;
+    transform: translate(0, 10vh);
+    transition: all 1.2s;
+  }
+  
+  .tag.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
