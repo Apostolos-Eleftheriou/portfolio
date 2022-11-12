@@ -202,7 +202,7 @@ a {
     background: url("images/me.jpeg") no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 50%;
+    border-radius: 28px;
     width: 300px;
     height: 300px;
     /* box-shadow: 0 18px 32px rgba(124, 102, 102, 0.3), 0 14px 11px rgba(0,0,0,0.22); */
@@ -285,12 +285,11 @@ h2 {
 .main-three-text {
     color: #1F2937;
     text-align: left;
-    padding: 10%;
 }
 
 .main-four-project, .main-five-project, .main-six-project, .main-seven-project, .main-eigth-project {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
 }
@@ -304,7 +303,7 @@ h2 {
     padding: 30px;
     border-radius: 10px;
     color: #E5E7EB;
-    max-width: 400px;
+    max-width: 500px;
     margin: 100px auto;
 }
 
@@ -337,7 +336,7 @@ h2 {
 }
 
 .btn-container {
-    padding-left: 20px;
+    margin: 0 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -392,13 +391,10 @@ footer {
 
   @media only screen and (max-width: 700px) {
     .main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper, .main-eigth-wrapper {
-        scale: 70%;
+        margin: 80px 30px;
     }
-    .main-three-text, .main-two, .email {
+    .email {
         scale: 70%;
-    }
-    .main-one-right {
-        scale: 80%;
     }
     .auto-input, .main-one-left-header {
         font-size: 29px;

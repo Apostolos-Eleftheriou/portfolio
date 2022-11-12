@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <script
@@ -46,7 +48,7 @@
         </div>
         <div class="main-one-right me"></div>
     </div>
-    <a id="stacks">stacks</a>
+    <a id="stacks"></a>
     <div class="main-two-info tag">What i'm working with.</div>
     <div class="main-two tag">
         <div class="main-two-imgs">
@@ -71,10 +73,10 @@
             <img class="ui-ux" src="images/ui-ux.png" alt="ui-ux logo">
         </div>        
     </div>
-    <div class="main-three tag">
+    <div class="main-three tag py-5">
         <a id="about-me"></a>
         <div class="main-three-text"><h2>A few words about myself.</h2><br>
-            <p class="bio"><br>
+            <div class="bio container px-4"><br>
             I'm 28 years old, my love for computers and technology goes
             all the way back to when I was 9 years old. That was when I first 
             saw a VT220 (a computer terminal which had only a screen and a keyboard).
@@ -94,13 +96,13 @@
             I began learning how to expand upon my problem solving skills and learn HTML, CSS and
             JavaScript. I'm a very fast learner so I picked it up quite quickly...
             I'm continuing this never ending journey of knowledge and I want to keep improving
-            on myself and my skills every day...</p>
+            on myself and my skills every day...</div>
         </div>
     </div>
     <a id="showcase"></a>
     <h2 class="recent-projects tag">Recent Projects</h2>
      <div class="main-four-wrapper tag">
-        <div class="main-four-project">
+        <div class="main-four-project flex-wrap flex-lg-nowrap">
       <div class="project-title">
         <div class="project-title-text">Rock Paper Scissors</div>
         <div class="project-title-subtext">Play against the computer! Trying to win gets
@@ -108,13 +110,13 @@
         </div>
       </div>
         <div class="btn-container">
-            <button class="button"><a class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/rock-paper-scissors">Source Code</a></button>
-            <button class="button"><a class="clickable-area" href="https://apostolos-eleftheriou.github.io/rock-paper-scissors/">Live Demo</a></button>
+            <button class="button"><a target="_blank" class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/rock-paper-scissors">Source Code</a></button>
+            <button class="button"><a target="_blank" class="clickable-area" href="https://apostolos-eleftheriou.github.io/rock-paper-scissors/">Live Demo</a></button>
          </div>
       </div>
     </div>
     <div class="main-five-wrapper tag">
-        <div class="main-five-project">
+        <div class="main-five-project flex-wrap flex-lg-nowrap">
             <div class="project-title">
                 <div class="project-title-text">Etc-A-Sketch</div>
                 <div class="project-title-subtext">This project demonstrates my dom manipulation skills.
@@ -122,24 +124,24 @@
                 </div>
               </div>
               <div class="btn-container">
-              <button class="button"><a class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/etch-a-sketch">Source Code</a></button>
-              <button class="button"><a class="clickable-area" href="https://apostolos-eleftheriou.github.io/etch-a-sketch/"> Live Demo</a></button>
+              <button class="button"><a target="_blank" class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/etch-a-sketch">Source Code</a></button>
+              <button class="button"><a target="_blank" class="clickable-area" href="https://apostolos-eleftheriou.github.io/etch-a-sketch/"> Live Demo</a></button>
                 </div>
             </div>
     </div>
     <div class="main-six-wrapper tag">
-        <div class="main-six-project">
+        <div class="main-six-project flex-wrap flex-lg-nowrap">
             <div class="project-title">
                 <div class="project-title-text">Portofolio</div>
                 <div class="project-title-subtext">The portfolio source code.</div>
             </div>
             <div class="btn-container">
-                <button class="button"><a class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/portfolio">Source Code</a></button>
+                <button class="button"><a target="_blank" class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/portfolio">Source Code</a></button>
             </div>
         </div>
     </div>
     <div class="main-seven-wrapper tag">
-        <div class="main-seven-project">
+        <div class="main-seven-project flex-wrap flex-lg-nowrap">
             <div class="project-title">
                 <div class="project-title-text">My CV</div>
                 <div class="project-title-subtext">You can download my CV in English 
@@ -148,8 +150,8 @@
             </div>
             <a id="CV"></a>
             <div class="btn-container tag">
-              <button class="button"><a class="clickable-area" href="https://drive.google.com/uc?export=view&id=1VR9kUuOqywPXahGfnxIK1UrKnyOa3c2L">English CV</a></button>
-              <button class="button"><a class="clickable-area" href="https://drive.google.com/uc?export=view&id=14xqdYTl6sCk942GgMLEW3JEdI15Dn1DK">Greek CV</a></button>
+              <button class="button"><a target="_blank" class="clickable-area" href="https://drive.google.com/uc?export=view&id=1VR9kUuOqywPXahGfnxIK1UrKnyOa3c2L">English CV</a></button>
+              <button class="button"><a target="_blank" class="clickable-area" href="https://drive.google.com/uc?export=view&id=14xqdYTl6sCk942GgMLEW3JEdI15Dn1DK">Greek CV</a></button>
             </div>
         </div>
     </div>
@@ -182,54 +184,53 @@
     </footer>
     
       <script>
-        let click = document.querySelector('.click');
-        let list = document.querySelector('.list');
-        click.addEventListener("click",()=>{
-            list.classList.toggle('newlist');
-        });
+        $(document).ready(function() {
+            let click = document.querySelector('.click');
+            let list = document.querySelector('.list');
+            click.addEventListener("click",()=>{
+                list.classList.toggle('newlist');
+            });
 
-        window.onclick = function(e) {
-            if(!e.target.matches('.click')){
-                list.classList.remove('newlist');
+            window.onclick = function(e) {
+                if(!e.target.matches('.click')){
+                    list.classList.remove('newlist');
+                }
             }
-        }
+            const typed = new Typed('.auto-input', {
+                strings: ["Apostolis.","a Web Developer.","a UI/UX Desinger."],
+                typeSpeed: 45,
+                backSpeed: 40,
+                loop: true
+            });
+            $(window).on("load",function(){
+                $(".loader-wrapper").delay(1000).fadeOut("slow");
+            });
+
+            $(document).on("scroll", function() {
+                var pageTop = $(document).scrollTop();
+                var pageBottom = pageTop + $(window).height();
+                var tags = $(".tag");
+            
+                for (var i = 0; i < tags.length; i++) {
+                var tag = tags[i];
+            
+                if ($(tag).position().top < pageBottom) {
+                    $(tag).addClass("visible");
+                } else {
+                    $(tag).removeClass("visible");
+                }
+                }
+            });
+
+            // const scroll = new SmoothScroll('a[href*="#"]', {
+            //     speed: 50
+            // });
+
+        });
+        
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        const typed = new Typed('.auto-input', {
-        strings: ["Apostolis.","a Web Developer.","a UI/UX Desinger."],
-        typeSpeed: 45,
-        backSpeed: 40,
-        loop: true
-      });
-    </script>
-      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> 
-    <script>
-          const scroll = new SmoothScroll('a[href*="#"]', {
-              speed: 600
-          });
-    </script>
-    <script>
-        $(window).on("load",function(){
-        $(".loader-wrapper").delay(1000).fadeOut("slow");
-        });
-    </script>
-    <script>
-        $(document).on("scroll", function() {
-            var pageTop = $(document).scrollTop();
-            var pageBottom = pageTop + $(window).height();
-            var tags = $(".tag");
-        
-            for (var i = 0; i < tags.length; i++) {
-            var tag = tags[i];
-        
-            if ($(tag).position().top < pageBottom) {
-                $(tag).addClass("visible");
-            } else {
-                $(tag).removeClass("visible");
-            }
-            }
-  });
-    </script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> 
+
 </body>
 </html>
