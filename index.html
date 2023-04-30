@@ -25,7 +25,6 @@
         <div class="header-logo">Portfolio</div>
         <a id="top"></a>
         <div class="header-links">
-            <!-- <button class="click">≡</button> -->
             <div class="burger click d-flex  flex-column justify-content-center align-items-center">
                 <div class="line1"></div>
                 <div class="line2"></div>
@@ -243,12 +242,6 @@
                 }
             })
 
-            // window.onclick = function(e) {
-            //     if(!e.target.matches('.click')){
-            //         $(".list").removeClass("newlist");
-            //         $(".burger").removeClass("toggle");
-            //     }
-            // }
             const typed = new Typed('.auto-input', {
                 strings: ["Apostolis.","a Web Developer."],
                 typeSpeed: 45,
@@ -275,26 +268,6 @@
             $(window).on("load",function(){
                 $(".loader-wrapper").delay(1000).fadeOut("slow");
             });
-
-            // $(document).on("scroll", function() {
-            //     var pageTop = $(document).scrollTop();
-            //     var pageBottom = pageTop + $(window).height();
-            //     var tags = $(".tag");
-            
-            //     for (var i = 0; i < tags.length; i++) {
-            //     var tag = tags[i];
-            
-            //     if ($(tag).position().top < pageBottom) {
-            //         $(tag).addClass("visible");
-            //     } else {
-            //         $(tag).removeClass("visible");
-            //     }
-            //     }
-            // });
-
-            // const scroll = new SmoothScroll('a[href*="#"]', {
-            //     speed: 50
-            // });
 
         });
         
