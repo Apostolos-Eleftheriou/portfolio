@@ -25,15 +25,30 @@
         <div class="header-logo">Portfolio</div>
         <a id="top"></a>
         <div class="header-links">
-            <button class="click">≡</button>
-            <div class="list">
-                <button class="links"><a class="dropdown-links" href="#stacks">What im working with</a></button>
-                <button class="links"><a class="dropdown-links" href="#about-me">About me</a></button>
-                <button class="links"><a class="dropdown-links" href="#showcase">Projects</a></button>
-                <button class="links"><a class="dropdown-links" href="#CV">My CV</a></button>
-                <button class="links"><a class="dropdown-links" href="#email">Contact me</a></button>
+            <!-- <button class="click">≡</button> -->
+            <div class="burger click d-flex  flex-column justify-content-center align-items-center">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </div>
+        <nav class="list container d-flex flex-column">
+            <a class="dropdown-links links" href="#stacks">What im working with</a>
+            <a class="dropdown-links links" href="#about-me">About me</a>
+            <a class="dropdown-links links" href="#showcase">Projects</a>
+            <a class="dropdown-links links" href="#CV">My CV</a>
+            <a class="dropdown-links links" href="#email">Contact me</a>
+            <div class="d-flex justify-content-center my-4" id="nav-social">
+                <a href="https://github.com/Apostolos-Eleftheriou" target="_blank" class="mx-2">
+                    <i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/apostolis.eleftheriou/" target="_blank" class="mx-2">
+                    <i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/apostolis_elef/?utm_medium=copy_link" target="_blank" class="mx-2">
+                    <i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/apostolos-eleftheriou-a16b68230/" target="_blank" class="mx-2">
+                    <i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </nav>
     </div>
     <div class="loader-wrapper">
         <span class="loader"><span class="loader-inner"></span></span>
@@ -50,15 +65,21 @@
     </div>
     <a id="stacks"></a>
     <div class="main-two-info tag">What i'm working with.</div>
-    <div class="main-two tag">
+    <div class="main-two tag my-4 d-flex justify-content-around flex-wrap align-items-center container tag">
         <div class="main-two-imgs">
             <img class="imgtwo" src="images/html.png"  alt="html logo">
         </div>
         <div class="main-two-imgs">
-            <img class="imgtwo" src="images/css.png" width="108px" alt="css logo">
+            <img class="imgtwo" src="images/css.png" alt="css logo">
         </div>
         <div class="main-two-imgs">
-            <img class="imgtwo" src="images/js.png" width="140px" alt="JavaSript logo">
+            <img class="imgtwo" src="images/js.png" alt="JavaSript logo">
+        </div>
+        <div class="main-two-imgs">
+            <img class="imgtwo" src="images/1183672.png" alt="react logo">
+        </div>
+        <div class="main-two-imgs">
+            <img class="imgtwo" src="images/ionic.png" alt="ionic logo">
         </div>
         <div class="main-two-imgs">
             <img class="imgtwo" src="images/bootstrap.png" alt="bootstraplogo">
@@ -70,157 +91,206 @@
             <img class="imgtwo" src="images/git.png"  alt="Git logo">
         </div>
         <div class="main-two-imgs">
-            <img class="ui-ux" src="images/ui-ux.png" alt="ui-ux logo">
+            <img class="imgtwo" src="images/ux-ui-logo.svg" alt="ui-ux logo">
         </div>        
     </div>
     <div class="main-three tag py-5">
         <a id="about-me"></a>
-        <div class="main-three-text"><h2>A few words about myself.</h2><br>
-            <div class="bio container px-4"><br>
-            I'm 28 years old, my love for computers and technology goes
-            all the way back to when I was 9 years old. That was when I first 
-            saw a VT220 (a computer terminal which had only a screen and a keyboard).
-            I was but a little kid stroking the keyboard pretending
-            to be coding. That is my first memory as a child and quite frankly 
-            what later in my life proved to be what I actually love doing.<br>
-            <br>I got into computers and started building them for my friends, family and myself.
-            I always was the go to tech guy, to fix a cellphone, a busted computer or a troublesome
-            software..<br>
-            <br>Fast forward to 2020 I made the decision to improve my life for the better.
-            I always was overweight.. and by 26 I was 140kg. So I did what I always do best,
-            analyze, prioritize, study and learn about nutrition and hit the gym with a methodical plan
-            to get the body I always wanted. Learned all about Calories, Macros you name it.
-            A year later I had managed to lose a wooping 65kg and hit my goal weight of 75kg.
-            I was the happiest man alive, but something was missing...<br>
-            <br>So I started this amazing journey with a curriculum named The Odin Project and with it
-            I began learning how to expand upon my problem solving skills and learn HTML, CSS and
-            JavaScript. I'm a very fast learner so I picked it up quite quickly...
-            I'm continuing this never ending journey of knowledge and I want to keep improving
-            on myself and my skills every day...</div>
+        <div class="main-three-text"><h2>A few words about myself.</h2>
+            <div class="bio container px-4">
+                <p class="tag"> I'm 28 years old, my love for computers and technology goes
+                    all the way back to when I was 9 years old. That was when I first 
+                    saw a VT220 (a computer terminal which had only a screen and a keyboard).
+                    I was but a little kid stroking the keyboard pretending
+                    to be coding. That is my first memory as a child and quite frankly 
+                    what later in my life proved to be what I actually love doing.</p>
+                <p class="tag">I got into computers and started building them for my friends, family and myself.
+                    I always was the go to tech guy, to fix a cellphone, a busted computer or a troublesome
+                    software..</p>
+                <p class="tag">Fast forward to 2020 I made the decision to improve my life for the better.
+                    I always was overweight.. and by 26 I was 140kg. So I did what I always do best,
+                    analyze, prioritize, study and learn about nutrition and hit the gym with a methodical plan
+                    to get the body I always wanted. Learned all about Calories, Macros you name it.
+                    A year later I had managed to lose a wooping 65kg and hit my goal weight of 75kg.
+                    I was the happiest man alive, but something was missing...</p>
+                <p class="tag">So I started this amazing journey with a curriculum named The Odin Project and with it
+                    I began learning how to expand upon my problem solving skills and learn HTML, CSS and
+                    JavaScript. I'm a very fast learner so I picked it up quite quickly...
+                    I'm continuing this never ending journey of knowledge and I want to keep improving
+                    on myself and my skills every day...</p>
+                </div>
         </div>
     </div>
     <a id="showcase"></a>
     <h2 class="recent-projects tag">Recent Projects</h2>
-     <div class="main-four-wrapper tag">
-        <div class="main-four-project flex-wrap flex-lg-nowrap">
-      <div class="project-title">
-        <div class="project-title-text">Rock Paper Scissors</div>
-        <div class="project-title-subtext">Play against the computer! Trying to win gets
-            addicting after a while.
-        </div>
-      </div>
-        <div class="btn-container">
-            <button class="button"><a target="_blank" class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/rock-paper-scissors">Source Code</a></button>
-            <button class="button"><a target="_blank" class="clickable-area" href="https://apostolos-eleftheriou.github.io/rock-paper-scissors/">Live Demo</a></button>
-         </div>
-      </div>
-    </div>
-    <div class="main-five-wrapper tag">
-        <div class="main-five-project flex-wrap flex-lg-nowrap">
-            <div class="project-title">
-                <div class="project-title-text">Etc-A-Sketch</div>
-                <div class="project-title-subtext">This project demonstrates my dom manipulation skills.
-                    Try drawing something!
+    <div class="d-flex justify-content-center flex-wrap align-items-center container mb-5">
+        <div class="main-four-wrapper tag">
+            <div class="main-four-project flex-wrap flex-lg-nowrap">
+                <div class="project-title">
+                    <div class="project-title-text">Rock Paper Scissors</div>
+                    <div class="project-title-subtext">Play against the computer! Trying to win gets
+                        addicting after a while.
+                    </div>
                 </div>
-              </div>
-              <div class="btn-container">
-              <button class="button"><a target="_blank" class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/etch-a-sketch">Source Code</a></button>
-              <button class="button"><a target="_blank" class="clickable-area" href="https://apostolos-eleftheriou.github.io/etch-a-sketch/"> Live Demo</a></button>
+                <div class="btn-container">
+                    <a target="_blank" class="clickable-area button"
+                        href="https://github.com/Apostolos-Eleftheriou/rock-paper-scissors">Source Code</a>
+                    <a target="_blank" class="clickable-area button"
+                        href="https://apostolos-eleftheriou.github.io/rock-paper-scissors/">Live Demo</a>
                 </div>
             </div>
-    </div>
-    <div class="main-six-wrapper tag">
-        <div class="main-six-project flex-wrap flex-lg-nowrap">
-            <div class="project-title">
-                <div class="project-title-text">Portofolio</div>
-                <div class="project-title-subtext">The portfolio source code.</div>
-            </div>
-            <div class="btn-container">
-                <button class="button"><a target="_blank" class="clickable-area" href="https://github.com/Apostolos-Eleftheriou/portfolio">Source Code</a></button>
-            </div>
         </div>
-    </div>
-    <div class="main-seven-wrapper tag">
-        <div class="main-seven-project flex-wrap flex-lg-nowrap">
-            <div class="project-title">
-                <div class="project-title-text">My CV</div>
-                <div class="project-title-subtext">You can download my CV in English 
-                    or in Greek.
+        <div class="main-five-wrapper tag">
+            <div class="main-five-project flex-wrap flex-lg-nowrap">
+                <div class="project-title">
+                    <div class="project-title-text">Etc-A-Sketch</div>
+                    <div class="project-title-subtext">This project demonstrates my dom manipulation skills.
+                        Try drawing something!
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <a target="_blank" class="clickable-area button"
+                        href="https://github.com/Apostolos-Eleftheriou/etch-a-sketch">Source
+                        Code</a>
+                    <a target="_blank" class="clickable-area button"
+                        href="https://apostolos-eleftheriou.github.io/etch-a-sketch/"> Live
+                        Demo</a>
                 </div>
             </div>
-            <a id="CV"></a>
-            <div class="btn-container tag">
-              <button class="button"><a target="_blank" class="clickable-area" href="https://drive.google.com/uc?export=view&id=1VR9kUuOqywPXahGfnxIK1UrKnyOa3c2L">English CV</a></button>
-              <button class="button"><a target="_blank" class="clickable-area" href="https://drive.google.com/uc?export=view&id=14xqdYTl6sCk942GgMLEW3JEdI15Dn1DK">Greek CV</a></button>
+        </div>
+        <div class="main-six-wrapper tag">
+            <div class="main-six-project flex-wrap flex-lg-nowrap">
+                <div class="project-title">
+                    <div class="project-title-text">Portofolio</div>
+                    <div class="project-title-subtext">The portfolio source code.</div>
+                </div>
+                <div class="btn-container">
+                    <a target="_blank" class="clickable-area button"
+                        href="https://github.com/Apostolos-Eleftheriou/portfolio">Source Code</a>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="main-eigth-wrapper tag">
-        <div class="main-eigth-project">
-            <div class="project-title">
-                <div class="project-title-text contact-me">Contact me at:</div>
-                <div class="project-title-subtext email">eleftheriou.apostolis@gmail.com</div>
+        <div class="main-seven-wrapper tag">
+            <div class="main-seven-project flex-wrap flex-lg-nowrap">
+                <div class="project-title">
+                    <div class="project-title-text">My CV</div>
+                    <div class="project-title-subtext">You can download my CV in English
+                        or in Greek.
+                    </div>
+                </div>
+                <a id="CV"></a>
+                <div class="btn-container tag">
+                    <a target="_blank" class="clickable-area button"
+                        href="https://drive.google.com/uc?export=view&id=1VR9kUuOqywPXahGfnxIK1UrKnyOa3c2L">English CV</a>
+                    <a target="_blank" class="clickable-area button"
+                        href="https://drive.google.com/uc?export=view&id=14xqdYTl6sCk942GgMLEW3JEdI15Dn1DK">Greek CV</a>
+                </div>
             </div>
-            <a id="email"></a>
+        </div>
+        <div class="main-eigth-wrapper tag">
+            <div class="main-eigth-project w-100">
+                <div class="project-title d-flex flex-column justify-content-center align-items-center w-100">
+                    <div class="project-title-text contact-me mb-2">Contact me at:</div>
+                    <a href="mailto: eleftheriou.apostolis@gmail.com"
+                        class="project-title-subtext email">eleftheriou.apostolis@gmail.com</a>
+                </div>
+                <a id="email"></a>
+            </div>
         </div>
     </div>
         <a class="gotopbtn" href="#"><i class="fas fa-angle-double-up"></i></a>
-    <footer class="footer">
-        <p style="padding-right: 20px;">
-          Copyright ©
-          <script>
-            document.write(new Date().getFullYear())
-          </script>
-          Apostolos Eleftheriou
-        </p>
-        <a href="https://github.com/Apostolos-Eleftheriou" target="_blank">
-            <i class="fab fa-github"></i></a>
-        <a href="https://www.facebook.com/apostolis.eleftheriou/" target="_blank">
-            <i class="fab fa-facebook-f"></i></a>
-        <a href="https://www.instagram.com/apostolis_elef/?utm_medium=copy_link" target="_blank">
-            <i class="fab fa-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/apostolos-eleftheriou-a16b68230/" target="_blank">
-            <i class="fab fa-linkedin-in"></i></a>
+    <footer class="footer d-flex justify-content-center align-items-center flex-wrap">
+        <div>
+            <p class="m-sm-0 pe-2 mb-3">
+                Copyright ©
+                <script>
+                    document.write(new Date().getFullYear())
+                </script>
+                Apostolos Eleftheriou
+            </p>
+        </div>
+        <div class="d-flex">
+            <a href="https://github.com/Apostolos-Eleftheriou" target="_blank" class="mx-2">
+                <i class="fab fa-github"></i></a>
+            <a href="https://www.facebook.com/apostolis.eleftheriou/" target="_blank" class="mx-2">
+                <i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/apostolis_elef/?utm_medium=copy_link" target="_blank" class="mx-2">
+                <i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/apostolos-eleftheriou-a16b68230/" target="_blank" class="mx-2">
+                <i class="fab fa-linkedin-in"></i></a>
+        </div>
     </footer>
     
       <script>
         $(document).ready(function() {
-            let click = document.querySelector('.click');
-            let list = document.querySelector('.list');
-            click.addEventListener("click",()=>{
-                list.classList.toggle('newlist');
-            });
 
-            window.onclick = function(e) {
-                if(!e.target.matches('.click')){
-                    list.classList.remove('newlist');
+            $(".burger").on("click", function() {
+                $(this).toggleClass("toggle");
+                $(".list").toggleClass("newlist");
+
+                
+                let delayX = 100;
+                if ($(".burger").hasClass("toggle")) {
+
+                    $(".list a").each(function() {
+                        $(this).delay(delayX).animate({ left: '0px', opacity: 1 });
+                        delayX += 150;
+                    });
+                } else {
+                    $(".list a").each(function() {
+                        $(this).css({ 'left': '450px', 'opacity': '0' });
+                    });
                 }
-            }
+            })
+
+            // window.onclick = function(e) {
+            //     if(!e.target.matches('.click')){
+            //         $(".list").removeClass("newlist");
+            //         $(".burger").removeClass("toggle");
+            //     }
+            // }
             const typed = new Typed('.auto-input', {
-                strings: ["Apostolis.","a Web Developer.","a UI/UX Desinger."],
+                strings: ["Apostolis.","a Web Developer."],
                 typeSpeed: 45,
                 backSpeed: 40,
                 loop: true
             });
+            $(".dropdown-links").on("click", function() {
+                $(".burger").trigger("click");
+            })
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("tag-visible");
+                    } else {
+                        entry.target.classList.remove("tag-visible");
+                    }
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.tag');
+            hiddenElements.forEach((el) => observer.observe(el));
+
+
             $(window).on("load",function(){
                 $(".loader-wrapper").delay(1000).fadeOut("slow");
             });
 
-            $(document).on("scroll", function() {
-                var pageTop = $(document).scrollTop();
-                var pageBottom = pageTop + $(window).height();
-                var tags = $(".tag");
+            // $(document).on("scroll", function() {
+            //     var pageTop = $(document).scrollTop();
+            //     var pageBottom = pageTop + $(window).height();
+            //     var tags = $(".tag");
             
-                for (var i = 0; i < tags.length; i++) {
-                var tag = tags[i];
+            //     for (var i = 0; i < tags.length; i++) {
+            //     var tag = tags[i];
             
-                if ($(tag).position().top < pageBottom) {
-                    $(tag).addClass("visible");
-                } else {
-                    $(tag).removeClass("visible");
-                }
-                }
-            });
+            //     if ($(tag).position().top < pageBottom) {
+            //         $(tag).addClass("visible");
+            //     } else {
+            //         $(tag).removeClass("visible");
+            //     }
+            //     }
+            // });
 
             // const scroll = new SmoothScroll('a[href*="#"]', {
             //     speed: 50
