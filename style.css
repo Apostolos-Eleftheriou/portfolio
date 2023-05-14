@@ -66,8 +66,8 @@
     align-items: center;
     justify-content: space-between;
     /* background-color: #252525; */
-    background-color: #252525db;
-    padding: 20px 0;
+    background-color: #252525b8;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     /* backdrop-filter: blur(2px); */
@@ -88,7 +88,7 @@
 }
 
 .click:hover {
-    background-color: #B71C1C;
+    background-color: #ff4961;
 }
 
 .click,.links {
@@ -104,7 +104,7 @@
 .list {
     z-index: 5000;
     right: -500px;
-    top: 114px;
+    top: 94px;
     position: absolute;
     transition: 0.5s;
     width: 350px;
@@ -116,14 +116,14 @@
     right: 0px;
     width: 350px;
     z-index: 9000;
-    background-color: #252525db;
+    background-color: #252525b8;
     backdrop-filter: blur(3px);
 }
 
 @media screen and (max-width: 992px) {
     .list {
         right: -500px;
-        top: 114px;
+        top: 94px;
         position: absolute;
         transition: 0.5s;
         width: 100%;
@@ -132,7 +132,7 @@
         background-color: #1d1d1d;
         right: 0px;
         border-radius: 0 0 8px 8px;
-        background-color: #252525db;
+        background-color: #252525b5;
         backdrop-filter: blur(3px);
         width: 100%;
         z-index: 9000;
@@ -211,7 +211,7 @@ a {
     justify-content: center;
     flex-flow: row wrap;
     gap: 100px;
-    padding: 183px 30px 100px 30px;
+    padding: 140px 30px 100px 30px;
 }
 
 .main-one-left-header {
@@ -222,10 +222,11 @@ a {
 }
 
 .main-one-left-subtext {
-    font-size: 24px;
-    font-family: 'Alegreya', serif;
-    font-weight: 450;
+    font-size: 21px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
     font-style: italic;
+    line-height: 30px;
     color: #E5E7EB;
 }
 
@@ -308,21 +309,23 @@ a {
 .bio {
     max-width: 900px;
     font-size: 27px;
-    font-family: 'Alegreya', serif;
+    font-family: 'Varela Round', sans-serif;
     font-weight: 1000;
     font-style: italic;
 }
 
 .bio p {
-    font-family: 'Alegreya', serif;
-    font-weight: 1000;
+    font-size: 24px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
     font-style: italic;
 }
 
 h2 {
     text-align: center;
     font-family: 'Yellowtail';
-    font-size: 55px;
+    font-size: 36px !important;
+    font-weight: bold;
     letter-spacing: 2px;
 }
 
@@ -356,11 +359,14 @@ h2 {
     .main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper,  .main-eigth-wrapper {
         height: auto;
     }
+    .main-one {
+        gap: 35px
+    }
 }
 
-.main-six-project {
+/* .main-six-project {
     width: 100%;
-}
+} */
 
 .button {
     background-color: #e3596b;
@@ -448,17 +454,20 @@ footer {
 
 .gotopbtn {
     position: fixed;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: #e3596b;
-    bottom: 65px;
-    right: 50px;
+    bottom: 25px;
+    right: 40px;
     text-decoration: none;
     text-align: center;
     line-height: 50px;
     color: #1d1d1d;
-    font-size: 22px;
-    border-radius: 70%;
+    font-size: 20px;
+    border-radius: 50%;
     transition: transform .3s ease;
 }
 .gotopbtn:hover {
@@ -509,7 +518,7 @@ footer {
     padding: 8px;
     border: solid 2px #F9FAF8;
     border-radius: 10px;
-    color: #1d1d1d;
+    color: white;
     font-style: italic;
     word-wrap: break-word;
     width: 100%;
@@ -525,16 +534,17 @@ footer {
 }
 
 .project-title-subtext {
-    font-family: 'Alegreya', serif;
-    font-size: 24px;
+    font-family: 'Poppins', serif;
+    font-size: 21px;
     font-weight: bold;
+    font-style: italic;
 }
 
 .recent-projects {
     padding: 6px;
     max-width: 600px;
     margin: 30px auto;
-    font-size: 55px;
+    font-size: 19px;
 }
 
 .tag {
