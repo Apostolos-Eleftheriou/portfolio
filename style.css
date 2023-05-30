@@ -593,7 +593,7 @@ footer {
 }
 
 
-@keyframes bg{
+/* @keyframes bg{
     0%{
       background-position-x: 0;
     }
@@ -601,7 +601,7 @@ footer {
     100%{
       background-position-x: 10000px;
     }
-  }
+  } */
 
 .invert{
     filter: invert(1) contrast(0.6);
@@ -624,7 +624,7 @@ footer {
     background-size: 10000px 100%;
     animation: bg 15s linear infinite ; */
     width: 100%;
-    background: linear-gradient(90deg,#e52e71,#000000);
+    background: linear-gradient(90deg,#f85f73,#000000);
 }
   
 .background{
