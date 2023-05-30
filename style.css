@@ -263,14 +263,12 @@ a {
     color: #aeb1ab;
 }
 
-/* .main-two {
+.main-two {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 52px;
-    margin-bottom: 150px;
-} */
+}
 #nav-social a {
     position: relative;
     opacity: 0;
@@ -379,6 +377,12 @@ h2 {
     }
     .main-three {
         clip-path: ellipse(220% 100% at center bottom);
+    }
+    .imgtwo {
+        height: 105px;
+        width: 105px;
+        object-fit: contain;
+        -webkit-object-fit: contain;
     }
 }
 
