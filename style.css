@@ -601,7 +601,7 @@ footer {
 }
 .ui-ux img {
     height: 170px;
-    width: 250px;
+    width: 270px;
     filter: contrast(0.6);
 }
 
@@ -696,6 +696,55 @@ footer {
   }
   
   .circle2{
+    height: 500px;
+    border: solid 20px black;
+    border-radius: 50%;
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 40px;
+    transform: translate(-50%,-50%);
+    animation: pulse 2s linear infinite;
+  }
+  
+  .background-two {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 81%;
+    right: 0%;
+    z-index: -30;
+    overflow: hidden;
+}
+  
+  .circle-two {
+    background-color: transparent;
+    height: 100%;
+    border-radius: 50%;
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* transform: translate(-50%,-50%); */
+  }
+  .circle1-two {
+    border: solid 25px #963945;
+    height: 600px;
+    border-radius: 50%;
+    width: 600px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* transform: translate(-50%,-50%); */
+    animation: pulse3 5s linear infinite;
+  }
+  
+  .circle2-two {
     height: 500px;
     border: solid 20px black;
     border-radius: 50%;
