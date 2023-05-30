@@ -287,10 +287,12 @@
             const hiddenElements = document.querySelectorAll('.tag');
             hiddenElements.forEach((el) => observer.observe(el));
 
-
-            $(window).on("load",function(){
-                $(".loader-wrapper").delay(1000).fadeOut("slow");
-            });
+            setTimeout(() => {
+                $(".loader-wrapper").fadeOut("slow");
+            }, 1000)
+            // $(window).on("load",function(){
+            //     $(".loader-wrapper").delay(1000).fadeOut("slow");
+            // });
 
         });
         
