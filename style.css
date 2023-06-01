@@ -55,6 +55,7 @@ body {
     font-family: 'Yellowtail', cursive;
     font-weight: bold;
     color: #fac650;
+    font-style: normal;
 }
 
 .dropdown-links, .clickable-area {
@@ -221,14 +222,15 @@ a {
 }
 
 .main-one-left-header {
-    font-size: 25px;
-    font-family: 'Yellowtail', cursive;
+    font-size: 21px;
+    font-family: 'Varela Round', sans-serif;
     font-weight: bold;
+    font-style: italic;
     color: #F9FAF8;
 }
 
 .main-one-left-subtext {
-    font-size: 21px;
+    font-size: 18px;
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -276,12 +278,15 @@ a {
 }
 
 .main-two-info {
-    font-size: 36px;
-    font-weight: bolder;
-    color: gainsboro;
+    font-size: 25px;
+    font-weight: bold;
+    color: #E5E7EB;
     padding: 20px 5px;
     text-align: center;
-    font-family: 'Yellowtail';
+    font-style: normal;
+    /* font-family: 'cursive'; */
+    font-family: 'Varela Round', sans-serif;
+    font-style: italic;
     text-shadow: 3px 2px 0px black;
 }
 
@@ -322,7 +327,7 @@ a {
 }
 
 .bio p {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -330,10 +335,11 @@ a {
 
 h2 {
     text-align: center;
-    font-family: 'Yellowtail';
-    font-size: 36px !important;
+    font-size: 25px;
     font-weight: bold;
-    letter-spacing: 2px;
+    font-family: 'Varela Round', sans-serif;
+    font-style: italic;
+    text-shadow: 3px 2px 0px #adadad9c;
 }
 
 .main-three-text {
@@ -409,15 +415,17 @@ h2 {
 }
 
 .project-title-text {
-    font-size: 36px;
-    font-family: "Yellowtail";
+    font-size: 30px;
+    /* font-family: "Yellowtail"; */
+    font-family: cursive;
+    font-style: italic;
     font-weight: bold;
 }
 
-.project-title {
+/* .project-title {
     font-family: 'Yellowtail';
     font-size: 22px;
-}
+} */
 
 .btn-container {
     margin: 0 10px;
@@ -499,8 +507,10 @@ footer {
 }
 
 .dropdown-links {
-    font-family: 'Yellowtail';
-    font-size: 26px;
+    font-style: italic;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Varela Round';
     width: 100%;
     position: relative;
     left: 400px;
@@ -516,24 +526,6 @@ footer {
   .fa-github:hover, .fa-facebook-f:hover, .fa-instagram:hover, .fa-linkedin-in:hover {
     transform: rotate(360deg) scale(1.2);
   }
-
-  /* @media only screen and (max-width: 700px) {
-    .main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper, .main-eigth-wrapper {
-        margin: 80px 30px;
-    }
-    .email {
-        scale: 70%;
-    }
-    .auto-input, .main-one-left-header {
-        font-size: 29px;
-    }
-    h2 {
-        font-size: 35px;
-    }
-    h2.recent-projects {
-        font-size: 35px
-    }
-  } */
 
 .email {
     background-color: #e3596b;
@@ -557,7 +549,7 @@ footer {
 
 .project-title-subtext {
     font-family: 'Poppins', serif;
-    font-size: 21px;
+    font-size: 18px;
     font-weight: bold;
     font-style: italic;
 }
@@ -566,14 +558,15 @@ footer {
     padding: 10px 15px 5px 15px;
     max-width: 800px;
     margin: 30px auto;
-    font-size: 19px;
-    color: gainsboro;
+    font-size: 25px;
+    color: #E5E7EB;
+    font-weight: bold;
     text-shadow: 3px 2px 0px black;
 }
 
 .tag {
     opacity: 0;
-    transition: all 1s;
+    transition: opacity 1s;
 }
 
 .tag-visible {
