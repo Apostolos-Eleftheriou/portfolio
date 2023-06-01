@@ -415,7 +415,7 @@ h2 {
 }
 
 .project-title-text {
-    font-size: 30px;
+    font-size: 25px;
     /* font-family: "Yellowtail"; */
     font-family: 'Varela Round';
     font-style: italic;
@@ -558,7 +558,7 @@ footer {
     padding: 10px 15px 5px 15px;
     max-width: 800px;
     margin: 30px auto;
-    font-size: 25px;
+    font-size: 26px;
     color: #E5E7EB;
     font-weight: bold;
     text-shadow: 3px 2px 0px black;
