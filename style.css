@@ -1,3 +1,6 @@
+:root {
+    --primary-color: #f85f73; /* Initial value */
+}
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +8,15 @@
 }
 
 body {
-    background: linear-gradient(90deg,#f85f73,#000000);
+    background: linear-gradient(90deg,var(--primary-color),#000000);
 }
-
+.themes div[id] {
+    transition: all .3s ease;
+}
+.themes div[id]:hover {
+    transform: scale(1.2);
+    /* transition: all .4s ease; */
+}
 .loader-wrapper {
     width: 100%;
     height: 100%;
@@ -86,14 +95,14 @@ body {
 }
 
 .click{
-    background-color: #f85f73;
+    background-color: var(--primary-color);
     font-size: 32px;
     width: 60px;
     cursor: pointer;
 }
 
 .click:hover {
-    background-color: #ff4961;
+    filter: brightness(1.2);
 }
 
 .click,.links {
@@ -368,7 +377,7 @@ h2 {
     margin: 10px;
     box-shadow: 0px 11px 13px 3px #00000073;
     border: none;
-    border-left: solid 10px #f85f73;
+    border-left: solid 10px var(--primary-color);
 }
 @media screen and (max-width: 992px) {
     .main-four-wrapper, .main-five-wrapper, .main-six-wrapper, .main-seven-wrapper,  .main-eigth-wrapper {
@@ -397,13 +406,14 @@ h2 {
 } */
 
 .button {
-    background-color: #e3596b;
+    background-color: var(--primary-color);
     border-radius: 10px;
     color: #F9FAF8;
     padding: 8px;
     margin-top: 12px;
     width: 120px;
     height: auto;
+    font-family: 'Poppins', serif;
     text-align: center;
     border: 2px solid #F9FAF8;
     transition-duration: .6s;
@@ -456,7 +466,7 @@ footer {
 }
 
 .burger {
-    background-color: #f85f73;
+    background-color: var(--primary-color);
     width: 79px;
     height: 64px;
     cursor: pointer;
@@ -489,7 +499,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #e3596b;
+    background: var(--primary-color);
     bottom: 25px;
     right: 40px;
     text-decoration: none;
@@ -528,7 +538,7 @@ footer {
   }
 
 .email {
-    background-color: #e3596b;
+    background-color: var(--primary-color);
     padding: 8px;
     border: solid 2px #F9FAF8;
     border-radius: 10px;
@@ -634,7 +644,7 @@ footer {
     background-size: 10000px 100%;
     animation: bg 15s linear infinite; 
     width: 100%;
-    background: linear-gradient(90deg,#f85f73,#000000);
+    background: linear-gradient(90deg,var(--primary-color),#000000);
 }  */
 
   .svg_loader {
@@ -679,7 +689,7 @@ footer {
   }
 
   .circle1{
-    border: solid 25px #f85f73;
+    border: solid 25px var(--primary-color);
     height: 600px;
     border-radius: 50%;
     width: 600px;
@@ -688,6 +698,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    transition: border 1s ease;
     animation: pulse3 5s linear infinite;
   }
   
@@ -728,9 +739,10 @@ footer {
     /* transform: translate(-50%,-50%); */
   }
   .circle1-two {
-    border: solid 25px #963945;
+    border: solid 25px var(--primary-color);
     height: 600px;
     border-radius: 50%;
+    transition: border 1s ease;
     width: 600px;
     margin: auto;
     position: absolute;
@@ -769,11 +781,57 @@ footer {
   }
 
   .scale-animation-before {
-    transition: transform 1s;
+    transition: transform, border, 1s;
     transform: scale(0.7);
   }
   
   .scale-animation-after {
     transform: scale(1);
     transform-origin: center;
+  }
+
+  #green {
+    width: 25px;
+    height: 25px;
+    background: #16ac65;
+    border-radius: 50%;
+    border: solid 2px black;
+    cursor: pointer;
+  }
+
+  #purple {
+    width: 25px;
+    height: 25px;
+    background: #7c3ad3;
+    border-radius: 50%;
+    border: solid 2px black;
+    cursor: pointer;
+  }
+
+  #blue {
+    width: 25px;
+    height: 25px;
+    background: #4249b3;
+    border-radius: 50%;
+    border: solid 2px black;
+    cursor: pointer;
+  }
+  #default {
+    width: 25px;
+    height: 25px;
+    background: #f85f73;
+    border-radius: 50%;
+    border: solid 2px black;
+    cursor: pointer;
+  }
+  .themes-title {
+    color: #F9FAF8;
+    font-weight: 500;
+    font-style: italic;
+    margin-right: 10px;
+    font-family: 'Varela Round', sans-serif;
+  }
+  .themes {
+    position: relative;
+    left: 400px;
   }

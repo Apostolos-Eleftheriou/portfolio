@@ -33,6 +33,13 @@
             <a class="dropdown-links links" href="#showcase">Projects</a>
             <a class="dropdown-links links" href="#CV">My CV</a>
             <a class="dropdown-links links" href="#email">Contact me</a>
+            <div class="themes my-3 d-flex justify-content-center align-items-center">
+                <div class="themes-title">Themes: </div>
+                <div id="green" class="mx-2"></div>
+                <div id="purple" class="mx-2"></div>
+                <div id="blue" class="mx-2"></div>
+                <div id="default" class="mx-2"></div>
+            </div>
             <div class="d-flex justify-content-center my-4" id="nav-social">
                 <a href="https://github.com/Apostolos-Eleftheriou" target="_blank" class="mx-2">
                     <i class="fab fa-github"></i></a>
@@ -263,13 +270,26 @@
       <script>
         $(document).ready(function() {
 
+            $("#green").on("click", function() {
+                $(":root").css("--primary-color", "#16ac65");
+            });
+            $("#purple").on("click", function() {
+                $(":root").css("--primary-color", "#7c3ad3");
+            });
+            $("#blue").on("click", function() {
+                $(":root").css("--primary-color", "#4249b3");
+            });
+            $("#default").on("click", function() {
+                $(":root").css("--primary-color", "#f85f73");
+            });
+            
             $(".burger").on("click", function() {
                 $(this).toggleClass("toggle");
                 $(".list").toggleClass("newlist");
 
                 let delayX = 100;
                 if ($(".burger").hasClass("toggle")) {
-                    $(".list a").each(function() {
+                    $(".list a, .list .themes").each(function() {
                         $(this).delay(delayX).animate({ left: '0px', opacity: 1 });
                         delayX += 150;
                     });
@@ -277,7 +297,7 @@
                     // $(".list a").each(function() {
                     //     $(this).css({ 'left': '450px', 'opacity': '0' });
                     // });
-                    $(".list a").css({ 'left': '450px', 'opacity': '0' })
+                    $(".list a, .list .themes").css({ 'left': '450px', 'opacity': '0' })
                 }
             })
 
