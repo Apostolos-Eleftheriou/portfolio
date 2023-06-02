@@ -408,7 +408,7 @@ h2 {
 .button {
     background-color: var(--primary-color);
     border-radius: 10px;
-    color: #F9FAF8;
+    color: #2d2d2d;
     padding: 8px;
     margin-top: 12px;
     width: 120px;
@@ -542,7 +542,7 @@ footer {
     padding: 8px;
     border: solid 2px #F9FAF8;
     border-radius: 10px;
-    color: white;
+    color: #2d2d2d;
     font-style: italic;
     word-wrap: break-word;
     width: 100%;
@@ -793,7 +793,7 @@ footer {
   #green {
     width: 25px;
     height: 25px;
-    background: #16ac65;
+    background: #67b77d;
     border-radius: 50%;
     border: solid 2px black;
     cursor: pointer;
@@ -802,16 +802,24 @@ footer {
   #purple {
     width: 25px;
     height: 25px;
-    background: #7c3ad3;
+    background: #7d67b7;
     border-radius: 50%;
     border: solid 2px black;
     cursor: pointer;
   }
 
+  #yellow {
+    width: 25px;
+    height: 25px;
+    background: #ffdf67;
+    border-radius: 50%;
+    border: solid 2px black;
+    cursor: pointer;
+  }
   #blue {
     width: 25px;
     height: 25px;
-    background: #4249b3;
+    background: #677db7;
     border-radius: 50%;
     border: solid 2px black;
     cursor: pointer;

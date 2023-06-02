@@ -38,6 +38,7 @@
                 <div id="green" class="mx-2"></div>
                 <div id="purple" class="mx-2"></div>
                 <div id="blue" class="mx-2"></div>
+                <div id="yellow" class="mx-2"></div>
                 <div id="default" class="mx-2"></div>
             </div>
             <div class="d-flex justify-content-center my-4" id="nav-social">
@@ -269,15 +270,24 @@
     <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>  -->
       <script>
         $(document).ready(function() {
-
+            $(document).on("click", function(event) {
+                if (!$(event.target).closest(".list").length && !$(event.target).closest(".burger").length) {
+                    $(".list").removeClass("newlist");
+                    $(".burger").removeClass("toggle");
+                    $(".list a, .list .themes").css({ 'left': '450px', 'opacity': '0' });
+                }
+            });
             $("#green").on("click", function() {
-                $(":root").css("--primary-color", "#16ac65");
+                $(":root").css("--primary-color", "#67b77d");
             });
             $("#purple").on("click", function() {
-                $(":root").css("--primary-color", "#7c3ad3");
+                $(":root").css("--primary-color", "#7d67b7");
             });
             $("#blue").on("click", function() {
-                $(":root").css("--primary-color", "#4249b3");
+                $(":root").css("--primary-color", "#677db7");
+            });
+            $("#yellow").on("click", function() {
+                $(":root").css("--primary-color", "#ffdf67");
             });
             $("#default").on("click", function() {
                 $(":root").css("--primary-color", "#f85f73");
