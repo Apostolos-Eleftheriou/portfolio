@@ -754,4 +754,26 @@ footer {
     transform: translate(-50%,-50%);
     animation: pulse 2s linear infinite;
   }
+  *::-webkit-scrollbar {
+      width: 4px;
+      height: 4px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+      background: #343434;
+      border-radius: 3px;
+  }
+
+  *::-webkit-scrollbar-track {
+      background-color: #1d1d1d;
+  }
+
+  .scale-animation-before {
+    transition: transform 1s;
+    transform: scale(0.7);
+  }
   
+  .scale-animation-after {
+    transform: scale(1);
+    transform-origin: center;
+  }

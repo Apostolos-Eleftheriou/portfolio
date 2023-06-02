@@ -73,31 +73,31 @@
     <a id="stacks"></a>
     <div class="main-two-info tag">What I'm working with</div> 
     <div class="main-two tag mt-3 mb-5 d-flex justify-content-around flex-wrap align-items-center container tag">
-        <div class="main-two-imgs">
+        <div class="main-two-imgs scale-animation-before">
             <img class="imgtwo invert" src="images/html.png"  alt="html logo">
         </div>
-        <div class="main-two-imgs">
+        <div class="main-two-imgs scale-animation-before">
             <img class="imgtwo invert" src="images/css.png" alt="css logo">
         </div>
-        <div class="main-two-imgs">
+        <div class="main-two-imgs scale-animation-before">
             <img class="imgtwo invert" src="images/js.png" alt="JavaSript logo">
         </div>
-        <div class="main-two-imgs">
+        <div class="main-two-imgs scale-animation-before">
             <img class="imgtwo" src="images/1183672.png" alt="react logo">
         </div>
-        <div class="main-two-imgs">
+        <div class="main-two-imgs scale-animation-before">
             <img class="imgtwo" src="images/ionic.png" alt="ionic logo">
         </div>
-        <div class="main-two-imgs">
+        <div class="main-two-imgs scale-animation-before">
             <img class="imgtwo invert" src="images/jquery.png" alt="jquery logo">
         </div>
-        <div class="main-two-imgs">
+        <div class="main-two-imgs scale-animation-before">
             <img class="imgtwo brightness" src="images/bootstrap.png" alt="bootstraplogo">
         </div>
-        <div class="main-two-imgs">
+        <div class="main-two-imgs scale-animation-before">
             <img class="imgtwo invert" src="images/git.png"  alt="Git logo">
         </div>
-        <div class="main-two-imgs ui-ux d-flex justify-content-center align-items-center">
+        <div class="main-two-imgs ui-ux d-flex justify-content-center align-items-center scale-animation-before">
             <img class="imgtwo" src="images/ux-ui-logo.svg" alt="ui-ux logo">
         </div>    
     </div>
@@ -133,7 +133,7 @@
     <h2 class="recent-projects tag px-3 w-100">A Few Fun Projects From My Early Days</h2>
         <div class="d-flex justify-content-center flex-wrap align-items-center container pb-5 recent-projects-container">
             <!-- <div id="animated_bg_one" class="bg"></div> -->
-            <div class="main-four-wrapper tag">
+            <div class="main-four-wrapper tag scale-animation-before">
                 <div class="main-four-project flex-wrap flex-lg-nowrap">
                     <div class="d-flex flex-column">
                         <div class="project-title">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-five-wrapper tag">
+            <div class="main-five-wrapper tag scale-animation-before">
                 <div class="main-five-project flex-wrap flex-lg-nowrap">
                     <div class="d-flex flex-column">
                         <div class="project-title">
@@ -175,7 +175,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-six-wrapper tag">
+            <div class="main-six-wrapper tag scale-animation-before">
                 <div class="main-six-project flex-wrap flex-lg-nowrap w-100">
                     <div class="d-flex flex-column w-100">
                         <div class="project-title">
@@ -190,7 +190,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-seven-wrapper tag">
+            <div class="main-seven-wrapper tag scale-animation-before">
                 <div class="main-seven-project flex-wrap flex-lg-nowrap">
                     <div class="d-flex flex-column">
                         <div class="project-title">
@@ -211,7 +211,7 @@
                 </div>
             </div>
             <!-- <a id="email"></a> -->
-            <div class="main-eigth-wrapper tag">
+            <div class="main-eigth-wrapper tag scale-animation-before">
                 <div class="main-eigth-project w-100">
                     <div class="project-title d-flex flex-column justify-content-center align-items-center w-100">
                         <div class="project-title-text contact-me mb-2">Contact me at:</div>
@@ -302,6 +302,23 @@
 
             const hiddenElements = document.querySelectorAll('.tag');
             hiddenElements.forEach((el) => observer.observe(el));
+
+            const observerTwo = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        
+                        if (!entry.target.classList.contains("scale-animation-after")) {
+                            entry.target.classList.add("scale-animation-after");
+                        }
+                    } 
+                    // else {
+                    //     entry.target.classList.remove("scale-animation-after");
+                    // }
+                });
+            });
+
+            const hiddenElementsTwo = document.querySelectorAll('.scale-animation-before');
+            hiddenElementsTwo.forEach((el) => observerTwo.observe(el));
 
             setTimeout(() => {
                 $(".loader-wrapper").fadeOut("slow");
