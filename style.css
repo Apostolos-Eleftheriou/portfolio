@@ -311,12 +311,11 @@ a {
     -webkit-object-fit: cover;
 }
 .main-two-imgs {
-    width: auto;
+    width: 135px;
     margin: 5px;
     display: flex;
-    height: 135px;
     background: #00000063;
-    padding: 15px;
+    padding: 10px;
     border-radius: 20px;
 }
 
@@ -394,8 +393,8 @@ h2 {
         clip-path: ellipse(220% 100% at center bottom);
     }
     .imgtwo {
-        height: 105px;
-        width: 105px;
+        /* height: 105px;
+        width: 105px; */
         object-fit: contain;
         -webkit-object-fit: contain;
     }
