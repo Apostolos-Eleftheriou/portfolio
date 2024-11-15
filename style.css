@@ -656,6 +656,26 @@ footer {
     font-style: italic;
 }
 
+.project-title-subtext p {
+    font-family: 'Poppins', serif;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.sub_text {
+    font-family: 'Poppins', serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    color: #747474;
+    text-align: end;
+}
+
+.main-five-wrapper:hover .sub_text {
+    color: #2d2d2d;
+}
+
 .recent-projects {
     padding: 10px 15px 5px 15px;
     max-width: 800px;
@@ -842,7 +862,7 @@ footer {
     width: 100%;
     height: 100%;
     position: absolute;
-    top: 81%;
+    top: 91%;
     right: 0%;
     z-index: -30;
     overflow: hidden;
